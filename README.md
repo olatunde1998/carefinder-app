@@ -1,4 +1,4 @@
-# AltSchool Third Semester Exam
+# AltSchool Frontend Capstone Project
 
 Hello, 👋 \
 I'm Rasheed Olatunde (AltSchooler) currently studying Frontend Software Engineering at AltSchool Africa\

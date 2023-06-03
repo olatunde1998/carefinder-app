@@ -29,7 +29,7 @@ Rasheed Olatunde
 
 
 # Prototype
-![Minion](/images/carefinder-prototype.jpeg)
+![Minion](public/images/carefinder-prototype.jpeg)
  
 # How to Contribute
 

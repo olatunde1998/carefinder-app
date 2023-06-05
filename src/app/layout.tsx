@@ -1,6 +1,6 @@
-// import NavBar from './components/navBar'
-import Footer from "./components/footerComponents/footer";
-import NavBar from "./components/navBar/navBar";
+
+// import Footer from "./components/footerComponents/footer";
+// import NavBar from "./components/navBar/navBar";
 import "./globals.css";
 import { Benne } from "next/font/google";
 
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={benne.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

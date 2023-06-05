@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { BrandLogo } from "../../../../assets/icons/brandLogo";
-import Button from "../buttons/Button";
+import Button from "../buttons/button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
-
 
 export default function Hero() {
   return (
@@ -17,6 +16,7 @@ export default function Hero() {
           <p>
             Women&apos;s Health Tune up <span className="ml-4">About Us</span>
           </p>
+        
         </div>
 
         <div>

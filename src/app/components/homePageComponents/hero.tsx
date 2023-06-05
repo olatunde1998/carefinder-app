@@ -3,6 +3,7 @@ import { BrandLogo } from "../../../../assets/icons/brandLogo";
 import Button from "../buttons/button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,16 +17,15 @@ export default function Hero() {
           <p>
             Women&apos;s Health Tune up <span className="ml-4">About Us</span>
           </p>
-        
         </div>
 
-        <div>
+        <Link href="/signup">
           <Button
             btnText="Find Your Doctor"
             btnIcon
             className="bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]   hover:bg-white hover:text-[#1F4D36]"
           />
-        </div>
+        </Link>
       </section>
 
       {/* hero section with headings and image */}
@@ -51,16 +51,22 @@ export default function Hero() {
 
             <div>
               <div className="md:flex gap-2">
-                <Button
-                  btnText="Find Your Doctor"
-                  btnIcon
-                  className="bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem]"
-                />
-                <Button
-                  btnText="Find Your Doctor"
-                  btnIcon={<PlayIcon color="#1F4D36" width={24} height={24} />}
-                  className="bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]"
-                />
+                <Link href="/login">
+                  <Button
+                    btnText="Find Your Doctor"
+                    btnIcon
+                    className="bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem]"
+                  />
+                </Link>
+                <Link href="/signup">
+                  <Button
+                    btnText="Find Your Doctor"
+                    btnIcon={
+                      <PlayIcon color="#1F4D36" width={24} height={24} />
+                    }
+                    className="bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]"
+                  />
+                </Link>
               </div>
             </div>
           </div>

@@ -10,6 +10,7 @@ import { PlayIcon } from "../../../../assets/icons/playIcon";
 import Button from "../buttons/button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

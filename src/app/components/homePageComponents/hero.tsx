@@ -59,7 +59,7 @@ export default function Hero() {
                 <Button
                   btnText="Find Your Doctor"
                   btnIcon={<PlayIcon color="#1F4D36" width={24} height={24} />}
-                  className="bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]"
+                  className="bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]"
                 />
               </div>
             </div>

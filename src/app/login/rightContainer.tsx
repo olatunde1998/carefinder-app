@@ -8,6 +8,7 @@ import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+
 export default function RightContainer() {
   const router = useRouter();
   const [email, setEmail] = useState("");

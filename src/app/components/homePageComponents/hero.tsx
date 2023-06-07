@@ -4,6 +4,7 @@ import Button from "../buttons/button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
 import Link from "next/link";
+// import Link from "next/navigation";
 
 export default function Hero() {
   return (

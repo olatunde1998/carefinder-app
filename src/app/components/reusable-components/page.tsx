@@ -7,9 +7,8 @@ import {
 import { ArrowIcon } from "../../../../assets/icons/arrowIcon";
 import { BrandLogo } from "../../../../assets/icons/brandLogo";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
-import Button from "../buttons/button";
+import Button from "../buttons/Button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
-
 
 export default function Home() {
   return (

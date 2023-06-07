@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Button from "../components/buttons/button";
+import Button from "../components/buttons/Button";
 import { auth } from "../components/firebase/firebase";
 import Input from "../components/input/input";
 import { createUserWithEmailAndPassword } from "firebase/auth";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BrandLogo } from "../../../../assets/icons/brandLogo";
-import Button from "../buttons/button";
+import Button from "../buttons/Button";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
 import Link from "next/link";

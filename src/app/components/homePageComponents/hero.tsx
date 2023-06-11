@@ -21,16 +21,14 @@ export default function Hero() {
         </div>
 
         <Link href="/signup">
-          <Button
-            btnText="Find Your Doctor"
-            btnIcon
-            className="bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]   hover:bg-white hover:text-[#1F4D36]"
-          />
+          <button className="py-3 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]   hover:bg-white hover:text-[#1F4D36]">
+            Find Your Doctor
+          </button>
         </Link>
       </section>
 
       {/* hero section with headings and image */}
-      <section className="pt-16">
+      <section className="pt-16  max-w-[1300px] mx-auto">
         <div className="block md:flex justify-between">
           {/* content and buttons */}
           <div className="w-full md:w-1/2">
@@ -53,20 +51,17 @@ export default function Hero() {
             <div>
               <div className="md:flex gap-2">
                 <Link href="/login">
-                  <Button
-                    btnText="Find Your Doctor"
-                    btnIcon
-                    className="bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem]"
-                  />
+                  <button className="px-8 py-3 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem]">
+                    Find Your Doctor
+                  </button>
                 </Link>
                 <Link href="/signup">
-                  <Button
-                    btnText="Find Your Doctor"
-                    btnIcon={
-                      <PlayIcon color="#1F4D36" width={24} height={24} />
-                    }
-                    className="bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]"
-                  />
+                  <button className="py-3 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36]">
+                    Find Your Doctor
+                    <div className="ml-2">
+                      {<PlayIcon color="#1F4D36" width={24} height={24} />}
+                    </div>
+                  </button>
                 </Link>
               </div>
             </div>

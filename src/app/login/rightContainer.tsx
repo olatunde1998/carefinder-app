@@ -1,13 +1,11 @@
 "use client";
 
 import Image from "next/image";
-// import Button from "../components/buttons/button";
 import { auth, provider } from "../components/firebase/firebase";
 import Input from "../components/input/input";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import Button from "../components/buttons/Button";
 
 export default function RightContainer() {
   const router = useRouter();
@@ -23,9 +21,9 @@ export default function RightContainer() {
         const email = userCredential.user.email;
         const profilePicture: string | null = userCredential.user.photoURL;
 
-        localStorage.setItem("name", name);
-        localStorage.setItem("email", email);
-        localStorage.setItem("profilePicture", profilePicture);
+        // localStorage.setItem("name", name);
+        // localStorage.setItem("email", email);
+        // localStorage.setItem("profilePicture", profilePicture);
         router.push("/");
       })
       .catch((error) => {
@@ -42,9 +40,9 @@ export default function RightContainer() {
         const email = result.user.email;
         const profilePicture: string | null = result.user.photoURL;
 
-        localStorage.setItem("name", name);
-        localStorage.setItem("email", email);
-        localStorage.setItem("profilePicture", profilePicture);
+        // localStorage.setItem("name", name);
+        // localStorage.setItem("email", email);
+        // localStorage.setItem("profilePicture", profilePicture);
 
         router.push("/");
       })
@@ -83,11 +81,9 @@ export default function RightContainer() {
           </div>
 
           {/* <div className=" mt-4"> */}
-          <Button
-            className="mt-4 bg-[#1F4D36] text-[20px] text-white rounded-lg w-full hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.01rem]"
-            btnText="Sign In"
-            btnIcon
-          />
+          <button className="px-8 py-3 cursor-pointer transition duration-700 ease-in-out mt-4 bg-[#1F4D36] text-[20px] text-white rounded-lg w-full hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.01rem]">
+            Sign In
+          </button>
           {/* </div> */}
         </form>
 

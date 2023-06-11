@@ -1,7 +1,5 @@
 "use client";
-
 import Image from "next/image";
-import Button from "../components/buttons/Button";
 import { auth } from "../components/firebase/firebase";
 import Input from "../components/input/input";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -23,9 +21,9 @@ export default function RightContainer() {
         const email = userCredential.user.email;
         const profilePicture: string | null = userCredential.user.photoURL;
 
-        localStorage.setItem("name", name);
-        localStorage.setItem("email", email);
-        localStorage.setItem("profilePicture", profilePicture);
+        // localStorage.setItem("name", name);
+        // localStorage.setItem("email", email);
+        // localStorage.setItem("profilePicture", profilePicture);
         router.push("/login");
       })
       .catch((error) => {
@@ -66,11 +64,9 @@ export default function RightContainer() {
           </div>
 
           <div className=" mt-4">
-            <Button
-              className=" bg-[#1F4D36] text-[20px] text-white rounded-lg w-full hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.01rem]"
-              btnText="Sign Up"
-              btnIcon
-            />
+            <button className="px-8 py-3 cursor-pointer   transition duration-700 ease-in-out  bg-[#1F4D36] text-[20px] text-white rounded-lg w-full hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.01rem]">
+              Sign Up
+            </button>
           </div>
         </form>
 

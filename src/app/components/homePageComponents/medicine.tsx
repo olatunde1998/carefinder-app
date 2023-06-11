@@ -11,11 +11,11 @@ export default function Medicine() {
               width={500}
               height={500}
               alt="doctor pics"
-              className="absolute bottom-[400px] md:bottom-[0px] lg:absolute xl:bottom-[350px]"
+              className="hidden md:block bottom-[0px] lg:absolute xl:bottom-[350px]"
             />
         </div>
       <div
-        className="absolute left-0 md:absolute top-[-85px] md:left-[0px] right-auto mx-auto
+        className=" md:absolute top-[-85px] md:left-[0px] right-auto mx-auto
        w-full bg-[url(/images/condition-image.png)] h-[400px] flex justify-center flex-col bg-no-repeat bg-cover  text-white max-w-[1250px] lg:absolute lg:top-[-85px] lg:left-0 lg:right-auto  xl:absolute xl:top-[-85px] xl:left-[60px] xl:right-auto"
       >
         <p className="bg-[#F1EABA] max-w-[570px] rounded-sm p-2 mx-auto text-center text-[#1F4D36]">

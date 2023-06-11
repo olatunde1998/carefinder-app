@@ -11,7 +11,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Condition />
-      <div className="relative  h-[350px] max-w-[1400px] mx-auto">
+      <div className="md:relative  h-[350px] max-w-[1400px] mx-auto">
         <Medicine />
       </div>
       <Partner />

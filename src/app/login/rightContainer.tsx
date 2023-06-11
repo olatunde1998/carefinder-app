@@ -6,11 +6,27 @@ import Input from "../components/input/input";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
+import { BiHide, BiShow } from "react-icons/bi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+  
+// toast.configure()
 
 export default function RightContainer() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [show, setShow] = useState(false);
+
+
+  const successNotifying = () =>{
+    toast("Login Successful", {position: toast.POSITION.TOP_LEFT, autoClose:8000})
+  }
+  const errorNotifying = () =>{
+    toast.error("Invalid Email/Password", {position: toast.POSITION.TOP_LEFT})
+  }
 
   const logInWithEmailAndPassword = (e: any) => {
     e.preventDefault();
@@ -24,10 +40,13 @@ export default function RightContainer() {
         // localStorage.setItem("name", name);
         // localStorage.setItem("email", email);
         // localStorage.setItem("profilePicture", profilePicture);
+        successNotifying()
         router.push("/");
+
       })
       .catch((error) => {
         console.log(error);
+        errorNotifying()
       });
   };
 
@@ -48,11 +67,13 @@ export default function RightContainer() {
       })
       .catch((error) => {
         console.log(error);
+        errorNotifying()
+
       });
   };
   return (
-    <div className="px-4 text-[#1F4D36] w-full md:w-1/2  flex flex-col justify-center items-center">
-      <p className="text-center text-[32px] mb-10 md:hidden ">CareFinder App</p>
+    <div className="px-4 py-20 text-[#1F4D36] w-full md:w-1/2  flex flex-col justify-center items-center">
+      {/* <p className="text-center text-[32px] mb-10 md:hidden ">CareFinder App</p> */}
       <div className="px-4 w-full lg:w-[90%] xl:w-[60%]">
         <p className="text-center text-[32px] ">Welcome Back!</p>
         <p className="text-center">Login to your account</p>
@@ -69,20 +90,42 @@ export default function RightContainer() {
             />
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 relative">
             <Input
               inputIcon
               label="Your Password"
-              type="password"
+              // type="password"
+              type={`${show ? "text" : "password"}`}
               placeholder="Enter your password"
               inputValue={password}
               onChangeValue={(e: any) => setPassword(e.target.value)}
             />
+            <span
+                className="absolute bottom-2 right-2 pt-4 flex items-center mr-[0.25rem] text-[#FF8447]"
+                onClick={() => setShow(!show)}
+              >
+                <BiHide
+                  size={25}
+                  className={
+                    show === false
+                      ? "hidden items-center cursor-pointer"
+                      : "text-gray-500"
+                  }
+                />
+                <BiShow
+                  size={25}
+                  className={
+                    show === true
+                      ? "hidden items-center cursor-pointer"
+                      : "text-gray-500"
+                  }
+                />
+              </span>
           </div>
 
           {/* <div className=" mt-4"> */}
           <button className="px-8 py-3 cursor-pointer transition duration-700 ease-in-out mt-4 bg-[#1F4D36] text-[20px] text-white rounded-lg w-full hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.01rem]">
-            Sign In
+            Log in
           </button>
           {/* </div> */}
         </form>
@@ -104,7 +147,18 @@ export default function RightContainer() {
 
           <p className="py-1 ml-4">Sign in with Google</p>
         </div>
+         {/* Already have an account  */}
+         {/* <div onClick={notifying}>test toast</div> */}
+         <div className="mt-8">
+          <p className="text-center ">
+            Don&apos;t have an account yet?{" "}
+            <Link href="/signup" className="ml-4">
+              Sign up
+            </Link>
+          </p>
+        </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 }

@@ -1,14 +1,13 @@
 # AltSchool Frontend Capstone Project
 
 Hello, 👋 \
-I'm Rasheed Olatunde (AltSchooler) currently studying Frontend Software Engineering at AltSchool Africa\
-Just want to say a big thank to Altschool Africa  for the grace and opportunity giving to me to learn new frontend technology.
+Carefinder allows users to search for hospitals within their region. Users can input their location or select from a list of nearby cities to find hospitals in their area. The platform will provide a list of hospitals and their respective contact details, including address, phone number, and email.
 ```
 Here's some notes about my submission:
 
 1. A link to the project repository  https://github.com/olatunde1998/carefinder-app
 
-2. A publicly live hosted URL of the challenge https://altschool-vue-exam-3.vercel.app/ 
+2. A publicly live hosted URL of the challenge https://carefinder-app.vercel.app/ 
 
 Thank you very much AltSchool Africa.
 Best regards

@@ -10,9 +10,9 @@ import {
 
 export default function Condition() {
   return (
-    <div className="bg-[#1F4D36] pt-10 text-white mt-40 pb-60">
+    <div className="bg-[#1F4D36] pt-10 pb-20  text-white mt-10 md:mt-40 md:pb-60">
       <section className="text-center ">
-        <h2 className="text-[52px] font-bold">Condition We Treat</h2>
+        <h2 className="text-[32px] font-extrabold md:text-[52px] md:font-bold">Condition We Treat</h2>
         <p>
           Our doctor specialize in complex health issues ignored by conventional
           medicine
@@ -20,7 +20,7 @@ export default function Condition() {
       </section>
       <section className="px-4 mt-8 md:flex justify-between mx-auto max-w-[1024px]">
         {/* disease one */}
-        <div className="max-w-[230px] flex flex-col text-center items-center">
+        <div className="max-w-[230px] flex flex-col text-center items-center mx-auto mb-8">
           <div className="rounded-full bg-[#F1EABA] w-[100px] h-[100px] items-center flex justify-center md:w-[150px] md:h-[150px]">
             <DiseaseThree className="" color="black" width={56} height={63} />
           </div>
@@ -41,7 +41,7 @@ export default function Condition() {
           </div>
         </div>
         {/* disease two */}
-        <div className="max-w-[230px] flex flex-col text-center items-center">
+        <div className="max-w-[230px] flex flex-col text-center items-center mx-auto mb-8">
           <div className="rounded-full bg-[#F1EABA] w-[100px] h-[100px] items-center flex justify-center md:w-[150px] md:h-[150px]">
             <DiseaseOne className="" color="black" width={56} height={63} />
           </div>
@@ -63,7 +63,7 @@ export default function Condition() {
         </div>
 
         {/* disease three */}
-        <div className="max-w-[230px] flex flex-col text-center items-center">
+        <div className="max-w-[230px] flex flex-col text-center items-center mx-auto mb-8">
           <div className="rounded-full bg-[#F1EABA] w-[100px] h-[100px] items-center flex justify-center md:w-[150px] md:h-[150px]">
             <DiseaseTwo className="" color="black" width={56} height={63} />
           </div>

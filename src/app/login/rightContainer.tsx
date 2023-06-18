@@ -22,10 +22,10 @@ export default function RightContainer() {
 
 
   const successNotifying = () =>{
-    toast("Login Successful", {position: toast.POSITION.TOP_LEFT, autoClose:8000})
+    toast("Login Successful", {position: toast.POSITION.TOP_RIGHT})
   }
   const errorNotifying = () =>{
-    toast.error("Invalid Email/Password", {position: toast.POSITION.TOP_LEFT})
+    toast.error("Invalid Email/Password", {position: toast.POSITION.TOP_RIGHT})
   }
 
   const logInWithEmailAndPassword = (e: any) => {
@@ -41,7 +41,8 @@ export default function RightContainer() {
         // localStorage.setItem("email", email);
         // localStorage.setItem("profilePicture", profilePicture);
         successNotifying()
-        router.push("/");
+        router.push("/carefinder");
+        
 
       })
       .catch((error) => {
@@ -63,7 +64,9 @@ export default function RightContainer() {
         // localStorage.setItem("email", email);
         // localStorage.setItem("profilePicture", profilePicture);
 
-        router.push("/");
+        
+
+        router.push("/carefinder");
       })
       .catch((error) => {
         console.log(error);
@@ -71,6 +74,7 @@ export default function RightContainer() {
 
       });
   };
+  // console.log(localStorage.getItem("name"))
   return (
     <div className="px-4 py-20 text-[#1F4D36] w-full md:w-1/2  flex flex-col justify-center items-center">
       {/* <p className="text-center text-[32px] mb-10 md:hidden ">CareFinder App</p> */}

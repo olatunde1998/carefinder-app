@@ -46,9 +46,9 @@ export default function RightContainer() {
         const email = result.user.email;
         const profilePicture: string | null = result.user.photoURL;
 
-        // localStorage.setItem("name", name);
-        // localStorage.setItem("email", email);
-        // localStorage.setItem("profilePicture", profilePicture);
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("profilePicture", profilePicture);
 
         router.push("/login");
       })

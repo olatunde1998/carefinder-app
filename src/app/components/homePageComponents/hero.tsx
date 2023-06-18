@@ -4,7 +4,10 @@ import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
 import Link from "next/link";
 
+
+
 export default function Hero() {
+  
   return (
     <div className="px-4 text-[#1F4D36] max-w-[1400px] mx-auto">
       <section className="hidden  bg-[#F2F4EA] text-[#1F4D36] border-b-[.1rem] border-[#1F4D36] md:flex items-center justify-between p-4   ">
@@ -49,14 +52,14 @@ export default function Hero() {
             <div>
               <div className="md:flex gap-2">
                 <Link href="/login">
-                  <button className="px-8 py-4 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem] w-[200px]">
+                  <button className="px-8 py-4 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem] w-[220px]">
                     Find Your Doctor
                   </button>
                 </Link>
-                <Link href="/signup" className="hidden md:block">
-                  <button className="py-4 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-white border-[.1rem] flex items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36] w-[200px]">
+                <Link href="/signup" className="hidden lg:block">
+                  <button className="py-4 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-white border-[.1rem] flex gap-2 items-center justify-center px-6 text-[#1F4D36] border-[#1F4D36]  hover:bg-white hover:text-[#1F4D36] w-[220px]">
                     Find Your Doctor
-                    <div className="ml-2">
+                    <div className="">
                       {<PlayIcon color="#1F4D36" width={24} height={24} />}
                     </div>
                   </button>

@@ -14,8 +14,12 @@ export default function Home() {
       <div className="md:relative  h-[350px] max-w-[1400px] mx-auto">
         <Medicine />
       </div>
-      <Partner />
-      <Footer />
+      <div>
+        <Partner />
+      </div>
+      <div className="bg-[#1F4D36] ">
+        <Footer />
+      </div>
     </main>
   );
 }

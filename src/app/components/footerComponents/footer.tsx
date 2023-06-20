@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="">
           {/* logo */}
           <Image
-            src="/images/Altschool-logo.png"
+             src="/images/altschool-logo.png"
             width={100}
             height={100}
             alt="altSchool logo"

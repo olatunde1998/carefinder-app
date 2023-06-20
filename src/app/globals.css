@@ -18,7 +18,7 @@
 }
 /* embla carousel for  login and signup screen styling  */
 
-.embla {
+/* .embla {
   overflow: hidden;
 }
 .embla__container {
@@ -27,7 +27,7 @@
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
-}
+} */
 
 
 @tailwind base;

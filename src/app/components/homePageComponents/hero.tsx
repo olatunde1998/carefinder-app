@@ -16,14 +16,14 @@ export default function Hero() {
           <span className="ml-4 font-bold text-[24px] pt-2">Wisdom</span>
         </div>
 
-        <p className="hidden md:block">
+        <p className="hidden md:block ">
           Women&apos;s Health Tune up{" "}
           <span className="ml-4 cursor-pointer">About Us</span>
         </p>
 
         <Link href="/signup">
-          <button className="py-3 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]   hover:bg-white hover:text-[#1F4D36]">
-            Find Your Doctor
+          <button className="py-3 cursor-pointer rounded-xl  transition duration-700 ease-in-out bg-white border-[.1rem] px-6 text-[#1F4D36] border-[#1F4D36]   hover:bg-white hover:text-[#1F4D36]">
+            Sign up 
           </button>
         </Link>
       </section>
@@ -53,7 +53,7 @@ export default function Hero() {
               <div className="md:flex gap-2">
                 <Link href="/login">
                   <button className="px-8 py-4 cursor-pointer rounded-full  transition duration-700 ease-in-out bg-[#1F4D36] text-white  hover:bg-white hover:text-[#1F4D36] hover:border-[#1F4D36] border-[.1rem] w-[220px]">
-                    Find Your Doctor
+                    Find Your Hospital
                   </button>
                 </Link>
                 <Link href="/signup" className="hidden lg:block">

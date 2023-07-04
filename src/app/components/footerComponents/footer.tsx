@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
+import { AltSchoolImage } from "../../../../assets/icons/altSchool";
 
 export default function Footer() {
   return (
@@ -12,15 +13,11 @@ export default function Footer() {
       <section className="mb-2 md:flex justify-between pb-10 md:mb-20">
         <div className="">
           {/* logo */}
-          <Image
-             src="/images/altschool-logo.png"
-            width={100}
-            height={100}
-            alt="altSchool logo"
-          />
+
+          <AltSchoolImage className=" " color="" width={86} height={93} />
         </div>
         <div className="text-[20px]  md:flex md:justify-between  md:w-2/3 lg:w-1/2">
-          <div >
+          <div>
             <p className="font-bold mb-4"> Quick Links</p>
             <ul className="cursor-pointer">
               <li>Home </li>
@@ -80,7 +77,9 @@ export default function Footer() {
               <p>Terms</p>
               <p>Cookies</p>
             </div>
-            <p className="font-bold mt-4 lg:ml-8 lg:mt-0">Copyright © 2023, AltSchool Africa Inc.</p>
+            <p className="font-bold mt-4 lg:ml-8 lg:mt-0">
+              Copyright © 2023, AltSchool Africa Inc.
+            </p>
           </div>
         </div>
       </section>

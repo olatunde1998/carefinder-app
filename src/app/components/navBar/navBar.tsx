@@ -10,6 +10,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { AltSchoolImage } from "../../../../assets/icons/altSchool";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,12 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px]  flex justify-between items-center px-4 bg-[#1F4D36] text-gray-300 md:hidden">
       <div>
-        <Image
-          src="/images/Altschool-logo.png"
-          width={100}
-          height={100}
-          alt="altSchool logo"
-        />
+        <AltSchoolImage className="" color="" width={76} height={83} />
       </div>
 
       {/* menu */}

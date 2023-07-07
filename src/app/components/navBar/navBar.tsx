@@ -65,18 +65,7 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li className="p-2 text-2xl">
-          {" "}
-          <Link onClick={handleClick} href="skills">
-            Skills
-          </Link>
-        </li>
-        <li className="p-2 text-2xl">
-          {" "}
-          <Link onClick={handleClick} href="work">
-            Work
-          </Link>
-        </li>
+
         <li className="p-2 text-2xl">
           {" "}
           <Link

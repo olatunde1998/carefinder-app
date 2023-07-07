@@ -8,7 +8,7 @@ const benne = Benne({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Carefinder",
-  description: "An app to help you find the best care for your loved ones.",
+  description: "An app to help you find the best nearby hospital with hospital details.",
 };
 
 export default function RootLayout({

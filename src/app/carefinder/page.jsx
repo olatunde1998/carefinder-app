@@ -3,10 +3,10 @@ import PlaceLocation from "../components/places/place";
 
 const CareFinder = () => {
   return (
-    <div className="text-[#1F4D36]">
-      <div className="text-red-800 text-center py-10">
+    <div className="text-[#1F4D36] ">
+      <h1 className="text-gray-200 bg-[#1F4D36] text-center py-10 text-[32px]">
         Welcome to CareFinder App
-      </div>
+      </h1>
       <div className=" max-w-[1400px] mx-auto">
         <PlaceLocation />
       </div>

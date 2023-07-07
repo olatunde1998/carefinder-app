@@ -13,7 +13,7 @@ export default function Condition() {
     <div className="bg-[#1F4D36] pt-10 pb-20  text-white mt-10 md:mt-40 md:pb-60">
       <section className="text-center ">
         <h2 className="text-[32px] font-extrabold md:text-[52px] md:font-bold">Condition We Treat</h2>
-        <p>
+        <p className="max-w-[300px] text-center mx-auto px-2 md:px-0">
           Our doctor specialize in complex health issues ignored by conventional
           medicine
         </p>

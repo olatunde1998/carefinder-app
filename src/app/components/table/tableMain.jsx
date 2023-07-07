@@ -9,7 +9,7 @@ import {
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 
-export const TableMain = ({ data, columns = [], tableClass }) => {
+export const TableMain = ({ data, columns = [], tableClass,filters }) => {
   const table = useReactTable({
     data,
     columns,
@@ -20,6 +20,7 @@ export const TableMain = ({ data, columns = [], tableClass }) => {
     enableColumnResizing: true,
     //
     debugTable: true,
+    filters,
   });
 
   return (
@@ -70,11 +71,11 @@ export const TableMain = ({ data, columns = [], tableClass }) => {
 
         <>
           {/* Display this for table without data */}
-          <div className="font-bold text-4xl w-full h-[32.3rem] rounded-[0.25rem]">
-          <div className="flex items-center justify-center self-center leading-[30rem]">
-          No Data
-          </div>
-        </div>
+          {/* <div className="font-bold text-4xl w-full h-[32.3rem] rounded-[0.25rem]">
+            <div className="flex items-center justify-center self-center leading-[30rem]">
+              No Data
+            </div>
+          </div> */}
         </>
       </div>
 

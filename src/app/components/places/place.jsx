@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useReactTable } from "@tanstack/react-table";
 import TableMain from "../table/tableMain";
+import { Searchbar } from "../searchbar/searchbar";
 
 const options = {
   method: "GET",
@@ -33,7 +34,6 @@ const PlaceLocation = () => {
   const [inputValue, setInputValue] = useState();
   const [dataNeeded, setDataNeeded] = useState();
   const [dataNeededIbadan, setDataNeededIbadan] = useState();
-
 
   const [loading, setLoading] = useState(true);
 
@@ -107,7 +107,12 @@ const PlaceLocation = () => {
         region: gender.location.region,
         address: gender.location.address,
         timezone: gender.timezone,
-        latitude: (gender.geocodes.main.latitude + " " +  "," + " " + gender.geocodes.main.longitude)
+        latitude:
+          gender.geocodes.main.latitude +
+          " " +
+          "," +
+          " " +
+          gender.geocodes.main.longitude,
       };
     });
     console.log(dataNeeded, "====================");
@@ -130,7 +135,12 @@ const PlaceLocation = () => {
         region: ibadanData.location.region,
         address: ibadanData.location.address,
         timezone: ibadanData.timezone,
-        latitude: (ibadanData.geocodes.main.latitude + " " +  "," + " " + ibadanData.geocodes.main.longitude)
+        latitude:
+          ibadanData.geocodes.main.latitude +
+          " " +
+          "," +
+          " " +
+          ibadanData.geocodes.main.longitude,
       };
     });
     console.log(dataNeededIbadan, "====================");
@@ -154,8 +164,6 @@ const PlaceLocation = () => {
   //       />
   //     </div>
   //   );
-
-  
 
   // create columnHelper
   const columnHelper = createColumnHelper();
@@ -200,25 +208,55 @@ const PlaceLocation = () => {
   ];
 
   return (
-    <div>
-      <p>List of Hospitals around {inputValue}</p>
-      {/* <input
-        type="text"
-        value={inputValue}
+    <div className="px-4">
+      <p className="mt-8 text-[20px]">Select your Location</p>
+
+      <select
+        name="location"
+        id="location"
         onChange={handleInputChange}
-        placeholder="Search for a hospital"
-      /> */}
-       <select name="location" id="location" onChange={handleInputChange} className="w-[200px] p-4 border-[.23px] border-[#1F4D36] my-4 ">
-        <option>Select Location</option>
+        className="w-full p-4 border-[.23px] border-[#1F4D36] my-4 "
+      >
+        <option>Search by Location</option>
         {locations?.map((location, idx) => (
           <option key={idx}>{location}</option>
         ))}
       </select>
+      {/* search filter and others */}
+      <div className="flex gap-4 my-8">
+        <div className="w-full md:w-1/2">
+          <Searchbar
+            placeholderInfo="Filter by Hospital Name"
+            // onChange={handleNameFilterChange}
+          />
+        </div>
+        <div className="w-full md:w-1/2">
+          <Searchbar
+            placeholderInfo="Filter by Email"
+            // onChange={handleDescriptionFilterChange}
+          />
+        </div>
+        <div className="w-full md:w-1/2">
+          <Searchbar
+            placeholderInfo="Filter by Latitude/Longitude"
+            // onChange={handleStatusFilterChange}
+          />
+        </div>
+      </div>
+
+      <p className="mt-8 text-[20px]">List of Hospitals around {inputValue}</p>
+
       <TableMain
         //  data={dataNeededIbadan || dataNeeded  || []}
-         data={inputValue === "lagos" ? dataNeeded : inputValue === "ibadan" ? dataNeededIbadan : []}
-         columns={columns}
-         tableClass=" font-medium text-small"
+        data={
+          inputValue === "lagos"
+            ? dataNeeded
+            : inputValue === "ibadan"
+            ? dataNeededIbadan
+            : []
+        }
+        columns={columns}
+        tableClass=" font-medium text-small"
       />
 
       {/* {inputValue === "lagos" ? (
@@ -256,7 +294,6 @@ const PlaceLocation = () => {
       ) : (
         ""
       )} */}
-     
     </div>
   );
 };

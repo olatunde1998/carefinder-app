@@ -8,7 +8,8 @@ import { useEffect, useState } from "react";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useReactTable } from "@tanstack/react-table";
 import TableMain from "../table/tableMain";
-import { Searchbar } from "../searchbar/searchbar";
+import { Searchbar } from "../searchbar/Searchbar";
+
 
 const options = {
   method: "GET",

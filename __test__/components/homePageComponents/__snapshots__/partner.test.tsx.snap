@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Partner component matches the snapshot 1`] = `
+<div>
+  <div
+    class="mt-20 text-[#1F4D36]  "
+  >
+    <section
+      class="bg-white"
+    >
+      <div
+        class="px-[20px] py-[30px] text-center bg-white max-w-[1500px] mx-auto lg:py-[50px] xl:max-w-no"
+      >
+        <h5
+          class="text-[18px] font-bold mb-[40px] md:text-[36px]"
+        >
+          Trusted by numerous Public sector clients.
+        </h5>
+        <div
+          class="h-[100px] mx-auto md:h-[100px]"
+        >
+          <div
+            class="w-full relative overflow-hidden pt-14"
+          >
+            <div
+              class="relative flex items-center justify-center animate md:relative left-0 "
+            >
+              <div
+                class=" w-[150%] flex items-center justify-around"
+              >
+                <div
+                  class=" w-[100px] h-[100px] flex items-center justify-center mx-10"
+                >
+                  <img
+                    alt="NIPOST brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fscribbble.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fscribbble.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fscribbble.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px]  mx-10"
+                >
+                  <img
+                    alt="Ondo State brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Faltschool-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Faltschool-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Faltschool-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px] flex items-center justify-center  mx-10"
+                >
+                  <img
+                    alt="Federal Capital Teritary Abuja brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fnetlify-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fnetlify-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fnetlify-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px] flex items-center justify-center p-2 mx-10"
+                >
+                  <img
+                    alt="Lagos state brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Famazon-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Famazon-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Famazon-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px]  mx-10"
+                >
+                  <img
+                    alt="Ondo State brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub-mark.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fgithub-mark.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fgithub-mark.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+              </div>
+              <div
+                class="w-[150%] flex items-center justify-around"
+              >
+                <div
+                  class=" w-[100px] h-[100px] flex items-center justify-center  mx-10"
+                >
+                  <img
+                    alt="NIPOST brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fscribbble.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fscribbble.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fscribbble.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px]  mx-10"
+                >
+                  <img
+                    alt="Ondo State brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Faltschool-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Faltschool-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Faltschool-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class="w-[100px] h-[100px] flex items-center justify-center mx-10"
+                >
+                  <img
+                    alt="Federal Capital Teritary Abuja brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fnetlify-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fnetlify-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fnetlify-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px]  p-2 mx-10"
+                >
+                  <img
+                    alt="Lagos state brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Famazon-logo.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Famazon-logo.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Famazon-logo.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+                <div
+                  class=" w-[100px] h-[100px]  mx-10"
+                >
+                  <img
+                    alt="Ondo State brand logo"
+                    class="w-auto h-auto"
+                    data-nimg="1"
+                    decoding="async"
+                    height="70"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub-mark.png&w=256&q=75"
+                    srcset="/_next/image?url=%2Fimages%2Fgithub-mark.png&w=96&q=75 1x, /_next/image?url=%2Fimages%2Fgithub-mark.png&w=256&q=75 2x"
+                    style="color: transparent;"
+                    width="70"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

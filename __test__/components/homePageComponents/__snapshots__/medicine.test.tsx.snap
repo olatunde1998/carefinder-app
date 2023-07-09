@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Medicine component matches the snapshot 1`] = `
+<div>
+  <section
+    class=""
+  >
+    <div>
+      <img
+        alt="doctor pics"
+        class="hidden md:block bottom-[0px] lg:absolute xl:bottom-[350px]"
+        data-nimg="1"
+        decoding="async"
+        height="500"
+        loading="lazy"
+        src="/_next/image?url=%2Fimages%2Fscribbble.png&w=1080&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fscribbble.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fscribbble.png&w=1080&q=75 2x"
+        style="color: transparent;"
+        width="500"
+      />
+    </div>
+    <div
+      class=" md:absolute top-[-85px] md:left-[0px] right-auto mx-auto w-full bg-[url(/images/condition-image.png)] h-[400px] flex justify-center flex-col bg-no-repeat bg-cover  text-white max-w-[1250px] lg:absolute lg:top-[-85px] lg:left-0 lg:right-auto  xl:absolute xl:top-[-85px] xl:left-[60px] xl:right-auto"
+    >
+      <p
+        class="bg-[#F1EABA] max-w-[570px] rounded-sm p-2 mx-auto text-center text-[#1F4D36]"
+      >
+        We thrive where conventional medicine is ignored
+      </p>
+      <h2
+        class=" text-center text-[52px] font-bold my-4"
+      >
+        Root Cause Medicine
+      </h2>
+      <p
+        class="max-w-[560px] rounded-sm p-2 ml-auto text-center"
+      >
+        Wisdom doctors go beyond surface-level appointments and help you treat the root cause of your health issues so you don't have to keep dealing with symptoms.
+      </p>
+      <a
+        class="max-w-[150px] mx-auto"
+        href="/conditions"
+      >
+        Learn more
+         
+        <svg
+          class="inline-block"
+          fill="none"
+          height="24"
+          viewBox="0 0 34 34"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.8954 21.7901L22.0381 12.1398M22.0381 12.1398L12.1416 11.8936M22.0381 12.1398L21.7919 22.0362"
+            stroke="#F1EABA"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+    </div>
+  </section>
+</div>
+`;

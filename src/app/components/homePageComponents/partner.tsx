@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Partner() {
   return (
     <div className="mt-20 text-[#1F4D36]  ">
-      <section>
-        <div className="px-[20px] py-[30px] text-center bg-white max-w-[1500px] mx-auto lg:py-[50px] xl:max-w-none">
+      <section className="bg-white">
+        <div className="px-[20px] py-[30px] text-center bg-white max-w-[1500px] mx-auto lg:py-[50px] xl:max-w-no">
           <h5 className="text-[18px] font-bold mb-[40px] md:text-[36px]">
             Trusted by numerous Public sector clients.
           </h5>
@@ -14,7 +14,7 @@ export default function Partner() {
               <div className="relative flex items-center justify-center animate md:relative left-0 ">
                 {/* part one */}
                 <div className=" w-[150%] flex items-center justify-around">
-                  <div className="rounded-full w-[100px] h-[100px] flex items-center justify-center mx-10">
+                  <div className=" w-[100px] h-[100px] flex items-center justify-center mx-10">
                     <Image
                       src="/images/scribbble.png"
                       width={70}
@@ -24,7 +24,7 @@ export default function Partner() {
                     />
                   </div>
 
-                  <div className="rounded-full w-[100px] h-[100px] border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px]  mx-10">
                     <Image
                       src="/images/altschool-logo.png"
                       width={70}
@@ -33,7 +33,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] flex items-center justify-center border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px] flex items-center justify-center  mx-10">
                     <Image
                       src="/images/netlify-logo.png"
                       width={70}
@@ -42,7 +42,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] flex items-center justify-center p-2 border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px] flex items-center justify-center p-2 mx-10">
                     <Image
                       src="/images/amazon-logo.png"
                       width={70}
@@ -51,7 +51,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px]  mx-10">
                     <Image
                       src="/images/github-mark.png"
                       width={70}
@@ -63,7 +63,7 @@ export default function Partner() {
                 </div>
                 {/* part two */}
                 <div className="w-[150%] flex items-center justify-around">
-                  <div className="rounded-full w-[100px] h-[100px] flex items-center justify-center border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px] flex items-center justify-center  mx-10">
                     <Image
                       src="/images/scribbble.png"
                       width={70}
@@ -72,7 +72,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px]  mx-10">
                     <Image
                       src="/images/altschool-logo.png"
                       width={70}
@@ -81,7 +81,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] flex items-center justify-center border-2 border-[#1F4D36] mx-10">
+                  <div className="w-[100px] h-[100px] flex items-center justify-center mx-10">
                     <Image
                       src="/images/netlify-logo.png"
                       width={70}
@@ -90,7 +90,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] border-2 border-[#1F4D36] p-2 mx-10">
+                  <div className=" w-[100px] h-[100px]  p-2 mx-10">
                     <Image
                       src="/images/amazon-logo.png"
                       width={70}
@@ -99,7 +99,7 @@ export default function Partner() {
                       className="w-auto h-auto"
                     />
                   </div>
-                  <div className="rounded-full w-[100px] h-[100px] border-2 border-[#1F4D36] mx-10">
+                  <div className=" w-[100px] h-[100px]  mx-10">
                     <Image
                       src="/images/github-mark.png"
                       width={70}

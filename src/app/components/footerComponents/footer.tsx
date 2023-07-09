@@ -1,11 +1,11 @@
-import Image from "next/image";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { BsGithub } from "react-icons/bs";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsYoutube } from "react-icons/bs";
-import { AltSchoolImage } from "../../../../assets/icons/altSchool";
+// import { AltSchoolImage } from "../../../../assets/icons/altSchool";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,8 +13,17 @@ export default function Footer() {
       <section className="mb-2 md:flex justify-between pb-10 md:mb-20">
         <div className="">
           {/* logo */}
+          <div className=" w-[100px] h-[100px]  md:mx-10">
+            <Image
+              src="/images/altschool-logo.png"
+              width={70}
+              height={70}
+              alt="Ondo State brand logo"
+              className="w-auto h-auto"
+            />
+          </div>
 
-          <AltSchoolImage className=" " color="" width={86} height={93} />
+          {/* <AltSchoolImage className=" " color="red" width={86} height={93} /> */}
         </div>
         <div className="text-[20px]  md:flex md:justify-between  md:w-2/3 lg:w-1/2">
           <div>

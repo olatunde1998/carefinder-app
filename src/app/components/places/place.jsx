@@ -230,11 +230,14 @@ const PlaceLocation = () => {
 
   return (
     <div className="px-4">
-      <div className="mt-8 text-[20px] flex justify-between items-center">
-        <p className="mt-8 text-[20px]">Select your Location</p>
-        <CSVLink className="downloadbtn p-3 bg-[#1F4D36] text-white rounded-md" filename="location.csv" data={csvData}>
+      <div className="mt-8 text-[10px] flex justify-between items-center md:text-[20px]">
+        <p className="mt-0  text-[16px] md:text-[20px] md:mt-8">Select your Location</p>
+        <div>
+
+        <CSVLink className="downloadbtn p-3 bg-[#1F4D36] text-white rounded-md" filename="hospital_location.csv" data={csvData}>
           Export to CSV
-        </CSVLink>
+        </CSVLink> 
+        </div>
         {/* Export Button End */}
       </div>
 
@@ -272,7 +275,7 @@ const PlaceLocation = () => {
         </div>
       </div>
 
-      <p className="mt-8 text-[20px]">List of Hospitals around {inputValue}</p>
+      <p className="mt-8 text-[16px] md:text-[20px]">List of Hospitals around {inputValue}</p>
 
       <TableMain
         //  data={dataNeededIbadan || dataNeeded  || []}
@@ -287,41 +290,7 @@ const PlaceLocation = () => {
         tableClass=" font-medium text-small"
       />
 
-      {/* {inputValue === "lagos" ? (
-        <div>
-          {homePageData?.results.map((heroData, idx) => (
-            <div key={idx}>
-              <p>{heroData.name}</p>
-              <p>{heroData.location.address}</p>
-              <p>{heroData.categories[0].id}</p>
-              <Image
-                src={`${heroData.categories[0].icon.prefix}${heroData.categories[0].icon.suffix}`}
-                width={100}
-                height={100}
-                alt="icon"
-              />
-            </div>
-          ))}
-        </div>
-      ) : inputValue === "ibadan" ? (
-        <div>
-          {ibadanDatas?.results.map((ibadanData, idx) => (
-            <div key={idx}>
-              <p>{ibadanData.name}</p>
-              <p>{ibadanData.location.address}</p>
-              <p>{ibadanData.categories[0].id}</p>
-              <Image
-                src={`${ibadanData.categories[0].icon.prefix}${ibadanData.categories[0].icon.suffix}`}
-                width={100}
-                height={100}
-                alt="icon"
-              />
-            </div>
-          ))}
-        </div>
-      ) : (
-        ""
-      )} */}
+
     </div>
   );
 };

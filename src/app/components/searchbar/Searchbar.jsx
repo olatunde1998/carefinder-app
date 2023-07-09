@@ -13,7 +13,7 @@ export const Searchbar = ({placeholderInfo, className, classNameTwo,onChange}) =
           </div>
           <input
             type="text"
-            className={`w-full p-2.5 pl-10 text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600 ${className}`}
+            className={`w-full p-2.5 pl-5 text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600 ${className}`}
             placeholder={placeholderInfo}
             onChange={onChange}
             required=""

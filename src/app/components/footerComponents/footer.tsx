@@ -15,7 +15,7 @@ export default function Footer() {
           {/* logo */}
           <div className=" w-[100px] h-[100px]  md:mx-10">
             <Image
-              src="/images/altschool-logo.png"
+              src="/images/altschool_africa_1.png"
               width={70}
               height={70}
               alt="Ondo State brand logo"

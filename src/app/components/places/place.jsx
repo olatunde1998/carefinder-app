@@ -6,10 +6,11 @@ import { useEffect, useState } from "react";
 // import { MoonLoader } from "react-spinners";
 // import TableMain from "../components/table/tableMain";
 import { createColumnHelper } from "@tanstack/react-table";
-import { useReactTable } from "@tanstack/react-table";
+// import { useReactTable } from "@tanstack/react-table";
 import TableMain from "../table/tableMain";
 import { Searchbar } from "../searchbar/Searchbar";
-
+import { CSVLink } from "react-csv";
+import { useMemo } from "react";
 
 const options = {
   method: "GET",
@@ -166,6 +167,25 @@ const PlaceLocation = () => {
   //     </div>
   //   );
 
+  // Contains the column headers and table data in the required format for CSV
+  const csvData = useMemo(() => {
+    if (!dataNeeded) return []; // Check if customers data is available
+    return [
+      ["s/n", "name", "distances", "address", "region", "latitude", "timezone"],
+      ...dataNeeded.map(
+        ({ name, distances, address, region, latitude, timezone }, index) => [
+          index + 1,
+          name,
+          distances,
+          address,
+          region,
+          latitude,
+          timezone,
+        ]
+      ),
+    ];
+  }, [dataNeeded]);
+
   // create columnHelper
   const columnHelper = createColumnHelper();
   // Table columns
@@ -210,7 +230,13 @@ const PlaceLocation = () => {
 
   return (
     <div className="px-4">
-      <p className="mt-8 text-[20px]">Select your Location</p>
+      <div className="mt-8 text-[20px] flex justify-between items-center">
+        <p className="mt-8 text-[20px]">Select your Location</p>
+        <CSVLink className="downloadbtn p-3 bg-[#1F4D36] text-white rounded-md" filename="location.csv" data={csvData}>
+          Export to CSV
+        </CSVLink>
+        {/* Export Button End */}
+      </div>
 
       <select
         name="location"
@@ -223,6 +249,7 @@ const PlaceLocation = () => {
           <option key={idx}>{location}</option>
         ))}
       </select>
+
       {/* search filter and others */}
       <div className="flex gap-4 my-8">
         <div className="w-full md:w-1/2">

@@ -3,6 +3,7 @@ import { BrandLogo } from "../../../../assets/icons/brandLogo";
 import { FlowerIcon } from "../../../../assets/icons/flower";
 import { PlayIcon } from "../../../../assets/icons/playIcon";
 import Link from "next/link";
+import { AltSchoolImageTwo } from "../../../../assets/icons/altSchool-two";
 
 
 
@@ -11,9 +12,10 @@ export default function Hero() {
   return (
     <div className="px-4 text-[#1F4D36] max-w-[1400px] mx-auto">
       <section className="hidden  bg-[#F2F4EA] text-[#1F4D36] border-b-[.1rem] border-[#1F4D36] md:flex items-center justify-between p-4   ">
-        <div className="flex justify-start md:flex items-center md:justify-center">
-          <BrandLogo color="#1F4D36" width={32} height={40} />
-          <span className="ml-4 font-bold text-[24px] pt-2">Wisdom</span>
+        <div className="flex justify-start  md:flex items-center md:justify-center">
+          {/* <BrandLogo color="#1F4D36" width={32} height={40} />
+          <span className="ml-4 font-bold text-[24px] pt-2">Wisdom</span> */}
+          <AltSchoolImageTwo color="#1F4D36" width={80} height={60} className="" />
         </div>
 
         <p className="hidden md:block ">

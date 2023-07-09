@@ -46,9 +46,9 @@ export default function Condition() {
             <DiseaseOne className="" color="black" width={56} height={63} />
           </div>
           <div className="mt-6">
-            <p className="text-[24px] font-semibold">Hormone Issues</p>
+            <p className="text-[24px] font-semibold">Autoimmunity</p>
             <p className="my-2">
-              Fatigue, menupause, fertility, thyroid issues, cycle optimization
+              Chronic breakouts, pain & other confusing symptoms.
             </p>
             <Link href="/conditions">
               Learn more{" "}
@@ -68,9 +68,9 @@ export default function Condition() {
             <DiseaseTwo className="" color="black" width={56} height={63} />
           </div>
           <div className="mt-6">
-            <p className="text-[24px] font-semibold">Hormone Issues</p>
+            <p className="text-[24px] font-semibold">Digestive Issues</p>
             <p className="my-2">
-              Fatigue, menupause, fertility, thyroid issues, cycle optimization
+              Inflammatory bowel, SIBO, gas & bloating, constipation, diarrhea.
             </p>
             <Link href="/conditions">
               Learn more{" "}

@@ -7,6 +7,8 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 import { BiHide, BiShow } from "react-icons/bi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function RightContainer() {
   const router = useRouter();
@@ -17,6 +19,13 @@ export default function RightContainer() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [show, setShow] = useState(false);
   const [confirmShow, setConfirmShow] = useState(false);
+
+  const successNotifying = () =>{
+    toast("Sign Up Successful", {position: toast.POSITION.TOP_RIGHT})
+  }
+  const errorNotifying = () =>{
+    toast.error("Invalid Email/Password", {position: toast.POSITION.TOP_RIGHT})
+  }
 
   const signUpWithEmailAndPassword = (e: any) => {
     e.preventDefault();
@@ -30,9 +39,11 @@ export default function RightContainer() {
         // localStorage.setItem("name", name);
         // localStorage.setItem("email", email);
         // localStorage.setItem("profilePicture", profilePicture);
+        successNotifying()
         router.push("/login");
       })
       .catch((error) => {
+        errorNotifying()
         console.log(error);
       });
   };
@@ -53,6 +64,7 @@ export default function RightContainer() {
         router.push("/login");
       })
       .catch((error) => {
+        errorNotifying()
         console.log(error);
       });
   };
@@ -73,6 +85,7 @@ export default function RightContainer() {
               placeholder="Enter your username"
               inputValue={username}
               onChangeValue={(e: any) => setUsername(e.target.value)}
+              
             />
           </div>
           <div className="mt-4">

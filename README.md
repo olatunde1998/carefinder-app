@@ -38,7 +38,7 @@ $ git clone [https://github.com/olatunde1998/carefinder-app](https://github.com/
 2. Change directory into the cloned folder and run the setup script
 $ cd carefinder-app
 
-3. Open your terminal and type this command `yarn add ` or `npm install` to add the vue dependency to the app in the development mode.
+3. Open your terminal and type this command `yarn add ` or `npm install` to add the react dependency to the app in the development mode.
 
 4. Then after the installation of the  dependency type this command  `yarn dev` to run the app in your local environment 
 
